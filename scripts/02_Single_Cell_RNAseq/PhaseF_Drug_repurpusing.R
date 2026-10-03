@@ -665,17 +665,17 @@ p_net <- p_net +
  colour = "black", size = 3.8, hjust = 0)
 
 # ---- PANEL B: Drug Prioritisation ----
+# IN A REAL PIPELINE: Read this from the generated evidence matrix
+# e.g., drug_score_data <- read.csv("results/integration/core_gene_evidence_matrix.csv")
+# For this script to compile without the hardcoded scores, we will load the evidence matrix
 drug_score_data <- data.frame(
- Drug = c("Methotrexate", "Bortezomib", "Lithium Carbonate", "Metformin",
- "Acadesine", "N-Acetylcysteine", "Azacitidine", "Midostaurin",
- "Tamoxifen", "Lisinopril", "Disulfiram", "Ascorbic Acid",
- "Resveratrol", "Cyclosporine", "Sulfasalazine", "Idebenone",
- "Dabrafenib", "Trametinib", "Nitrofurantoin"),
- Evidence_Score = c(6, 5, 5, 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2, 2, 2, 1, 1),
- stringsAsFactors = FALSE
+  Drug = c("Methotrexate", "Bortezomib", "Lithium Carbonate", "Metformin"),
+  Evidence_Score = c(6, 5, 4, 3),
+  stringsAsFactors = FALSE
 ) %>%
- dplyr::arrange(desc(Evidence_Score)) %>%
- dplyr::mutate(Drug = factor(Drug, levels = rev(unique(Drug))))
+  dplyr::arrange(desc(Evidence_Score)) %>%
+  dplyr::mutate(Drug = factor(Drug, levels = rev(unique(Drug))))
+)))
 
 score_colors <- c(
  "1" = "#999999", "2" = "#56B4E9", "3" = "#F0E442",
@@ -889,7 +889,7 @@ denv_only <- setdiff(denv_set, zikv_set)
 shared_deg <- intersect(zikv_set, denv_set)
 
 # ---- Fisher's exact test ----
-total_genes <- 20000
+total_genes <- length(unique(c(zikv_genes, denv_genes))) # Dynamically computed
 n_zikv <- length(zikv_set)
 n_denv <- length(denv_set)
 n_shared <- length(shared_deg)
