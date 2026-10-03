@@ -3,8 +3,8 @@ library(magick)
 library(cowplot)
 library(ggplot2)
 
-in_dir <- "E:/Zika/output_manuscript_figures"
-out_dir <- "E:/Zika/figures_final"
+in_dir <- "./output_manuscript_figures"
+out_dir <- "./figures_final"
 
 cat("Reading PDFs...\n")
 p1 <- image_read_pdf(file.path(in_dir, "GSVA_enrichment_shifts_heatmap.pdf"), density = 300)

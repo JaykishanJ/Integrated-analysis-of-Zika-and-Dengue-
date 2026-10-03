@@ -2,7 +2,7 @@ import os
 import glob
 import re
 
-directory = 'E:/Zika/scripts'
+directory = './scripts'
 r_files = glob.glob(os.path.join(directory, '*.R'))
 
 for filepath in r_files:

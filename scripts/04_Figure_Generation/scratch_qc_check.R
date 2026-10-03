@@ -3,10 +3,10 @@ library(dplyr)
 library(tidyr)
 
 # Load Phase A QC data (pre-filter)
-qc_a <- readRDS("E:/Zika/results/phaseA/objects/Phase_A_cell_qc.rds")
+qc_a <- readRDS("./results/phaseA/objects/Phase_A_cell_qc.rds")
 
 # Load Phase B QC filter calls
-qc_b <- read.csv("E:/Zika/results/phaseB/tables/Step4_Cell_Filter_Calls.csv")
+qc_b <- read.csv("./results/phaseB/tables/Step4_Cell_Filter_Calls.csv")
 
 # Join to get 'keep' status for all Phase A cells
 qc_all <- qc_a %>% left_join(qc_b %>% select(Sample, keep), by="Sample")

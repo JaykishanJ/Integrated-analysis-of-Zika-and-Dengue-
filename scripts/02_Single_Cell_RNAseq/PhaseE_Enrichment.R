@@ -24,7 +24,7 @@ suppressPackageStartupMessages({
   library(tidyr)
   library(stringr)
   library(ggplot2)
-  source("E:/Zika/scripts/inject_themes.R")
+  source("./scripts/inject_themes.R")
   library(scales)
   library(Matrix)
   library(pheatmap)
@@ -48,7 +48,7 @@ rm(.verbs, .owner, .masked)
 # ------------------------------------------------------------------------------
 # Configuration
 # ------------------------------------------------------------------------------
-data_dir <- "E:/Zika"
+data_dir <- "."
 setwd(data_dir)
 
 results_root <- file.path(data_dir, "results", "phaseE")

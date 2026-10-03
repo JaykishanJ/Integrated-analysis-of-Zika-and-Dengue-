@@ -2,7 +2,7 @@ import os
 import glob
 import re
 
-directory = 'E:/Zika/scripts'
+directory = './scripts'
 files = ['PhaseD_MainDownstream.R', 'PhaseD_Supplementary.R']
 
 for fn in files:

@@ -1,6 +1,6 @@
 import os
 
-filepath = 'E:/Zika/scripts/Assemble_Workflow_Panel.R'
+filepath = './scripts/Assemble_Workflow_Panel.R'
 with open(filepath, 'r', encoding='utf-8') as f:
     content = f.read()
 
@@ -15,8 +15,8 @@ new_content = new_content.replace(
 
 # 3. Add PNG and TIFF exports at 600 DPI
 add_exports = '''
-out_file_png <- "E:/Zika/plots/Comprehensive_A_to_F_Workflow_Panel.png"
-out_file_tiff <- "E:/Zika/plots/Comprehensive_A_to_F_Workflow_Panel.tiff"
+out_file_png <- "./plots/Comprehensive_A_to_F_Workflow_Panel.png"
+out_file_tiff <- "./plots/Comprehensive_A_to_F_Workflow_Panel.tiff"
 
 # Save as raster formats
 ggsave(out_file_png, mega_panel, width = 20, height = 14, dpi = 600, bg = "white")

@@ -3,7 +3,7 @@
 # =============================================================================
 
 options(stringsAsFactors = FALSE)
-out_dir <- "E:/Zika/results/phaseF/Drug_Repurposing_Results"
+out_dir <- "./results/phaseF/Drug_Repurposing_Results"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 suppressPackageStartupMessages({
@@ -98,9 +98,9 @@ hub_gene_metadata <- data.frame(
 )
 
 # ---- DEG data ----
-zikv_deg_file <- "E:/Zika/results/phaseD/tables/Step11d_ZIKV_Sig_Genes.csv"
-denv_deg_file <- "E:/Zika/results/phaseD/tables/Step11d_DENV_Sig_Genes.csv"
-deg_compare_file <- "E:/Zika/results/phaseD/tables/Step11d_DEG_Virus_Comparison_Sig.csv"
+zikv_deg_file <- "./results/phaseD/tables/Step11d_ZIKV_Sig_Genes.csv"
+denv_deg_file <- "./results/phaseD/tables/Step11d_DENV_Sig_Genes.csv"
+deg_compare_file <- "./results/phaseD/tables/Step11d_DEG_Virus_Comparison_Sig.csv"
 
 zikv_hub <- data.frame()
 denv_hub <- data.frame()
@@ -430,15 +430,15 @@ hub_genes <- c("ASNS", "CHAC1", "CTH", "DDIT3", "DDIT4", "DNAJB9", "HERPUD1", "M
 
 # ---- Load or synthesize enrichment results ----
 enr_files <- list(
- GO_BP = "E:/Zika/results/phaseF/tables/enrichment_GO_BP.csv",
- KEGG = "E:/Zika/results/phaseF/tables/enrichment_KEGG.csv",
- Reactome = "E:/Zika/results/phaseF/tables/enrichment_Reactome.csv"
+ GO_BP = "./results/phaseF/tables/enrichment_GO_BP.csv",
+ KEGG = "./results/phaseF/tables/enrichment_KEGG.csv",
+ Reactome = "./results/phaseF/tables/enrichment_Reactome.csv"
 )
 
 # Fallback: Phase E tables
 phaseE_fallback <- list(
- GO_BP = "E:/Zika/results/phaseE/tables/Step16_ORA_GO_BP.csv",
- KEGG = "E:/Zika/results/phaseE/tables/Step16c_ORA_KEGG.csv"
+ GO_BP = "./results/phaseE/tables/Step16_ORA_GO_BP.csv",
+ KEGG = "./results/phaseE/tables/Step16c_ORA_KEGG.csv"
 )
 
 get_enr_df <- function(filepath, dbname) {
@@ -847,8 +847,8 @@ cat("Figure 10 connectivity heatmap saved.\n")
 
 
 # ---- Load DEG lists ----
-zikv_deg_file <- "E:/Zika/results/phaseD/tables/Step11d_ZIKV_Sig_Genes.csv"
-denv_deg_file <- "E:/Zika/results/phaseD/tables/Step11d_DENV_Sig_Genes.csv"
+zikv_deg_file <- "./results/phaseD/tables/Step11d_ZIKV_Sig_Genes.csv"
+denv_deg_file <- "./results/phaseD/tables/Step11d_DENV_Sig_Genes.csv"
 
 zikv_sig <- data.frame(symbol = character())
 denv_sig <- data.frame(symbol = character())

@@ -1,7 +1,7 @@
 import os, re
 
 files = ['PhaseF_Drug_repurpusing.R', 'PhaseF_1_Drug_repurpusing.R']
-directory = 'E:/Zika/scripts'
+directory = './scripts'
 
 for fn in files:
     filepath = os.path.join(directory, fn)

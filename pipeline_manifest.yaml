@@ -1,0 +1,10 @@
+project_name: Integrated Zika Dengue Omics
+analysis_version: 1.0.0
+date: 2026-10-03
+expected_outputs:
+  - figures/Figure1_BulkRNAseq.svg
+  - figures/Figure2_SingleCellOverview.svg
+  - figures/Figure3_CellSpecificResponses.svg
+  - figures/Figure4_Trajectories.svg
+  - figures/Figure5_CellCommunication.svg
+  - figures/Figure6_Integration.svg

@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 
 # Load the Step 3 distribution (all cells, has n_virus_molecules)
-df_dist = pd.read_csv("E:/Zika/results/phaseB/tables/Cell_Distributions.csv")
+df_dist = pd.read_csv("./results/phaseB/tables/Cell_Distributions.csv")
 
 # Load the Step 4 filter calls (has the 'keep' flag)
-df_filter = pd.read_csv("E:/Zika/results/phaseB/tables/Cell_Filter_Calls.csv")
+df_filter = pd.read_csv("./results/phaseB/tables/Cell_Filter_Calls.csv")
 
 # Join on Sample
 df = pd.merge(df_dist, df_filter[['Sample', 'keep']], on='Sample', how='left')

@@ -1,8 +1,8 @@
 import os
 import shutil
 
-source_dir = "e:/Zika"
-dest_dir = "e:/Zika/Figure_Scripts_Package"
+source_dir = "."
+dest_dir = "./Figure_Scripts_Package"
 
 scripts = [
     "publication_figures_scripts/Figure1_BulkRNAseq.R",
@@ -46,9 +46,9 @@ for sf in scripts:
         
         if "utils.R" not in sf:
             # Replace BASE_DIR
-            content = content.replace('BASE_DIR <- "e:/Zika"', 'BASE_DIR <- "."')
+            content = content.replace('BASE_DIR <- "."', 'BASE_DIR <- "."')
             # Replace absolute util source
-            content = content.replace('source("e:/Zika/publication_figures_scripts/utils.R")', 'source("utils.R")')
+            content = content.replace('source("./publication_figures_scripts/utils.R")', 'source("utils.R")')
             
         with open(d_path, 'w', encoding='utf-8') as f:
             f.write(content)

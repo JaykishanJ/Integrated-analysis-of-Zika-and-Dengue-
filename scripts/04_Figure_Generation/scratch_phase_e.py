@@ -1,7 +1,7 @@
 import os
 import re
 
-filepath = 'E:/Zika/scripts/PhaseE_Enrichment.R'
+filepath = './scripts/PhaseE_Enrichment.R'
 with open(filepath, 'r', encoding='utf-8') as f:
     content = f.read()
 

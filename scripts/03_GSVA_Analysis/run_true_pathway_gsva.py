@@ -6,8 +6,8 @@ import gseapy as gp
 import warnings
 warnings.filterwarnings('ignore')
 
-BASE_DIR = "E:/Zika/ZIKA_Bulk_Som/ZIKA_Bulk_Som"
-OUT_DIR = "E:/Zika/figures_final/gsva_true_pathways"
+BASE_DIR = "./ZIKA_Bulk_Som/ZIKA_Bulk_Som"
+OUT_DIR = "./figures_final/gsva_true_pathways"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # We need the VST matrices for the 3 datasets

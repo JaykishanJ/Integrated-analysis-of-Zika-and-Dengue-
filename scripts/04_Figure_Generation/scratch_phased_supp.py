@@ -1,7 +1,7 @@
 import os
 import re
 
-filepath = 'E:/Zika/scripts/PhaseD_Supplementary.R'
+filepath = './scripts/PhaseD_Supplementary.R'
 with open(filepath, 'r', encoding='utf-8') as f:
     content = f.read()
 

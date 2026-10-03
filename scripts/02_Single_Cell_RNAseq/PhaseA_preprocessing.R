@@ -17,7 +17,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 library(ggplot2)
-  source("E:/Zika/scripts/inject_themes.R")
+  source("./scripts/inject_themes.R")
 library(httr)
 library(tools)
 
@@ -46,7 +46,7 @@ rm(.verbs, .owner, .masked)
 # ==============================================================================
 # Configuration
 # ==============================================================================
-data_dir <- "E:/Zika"
+data_dir <- "."
 raw_dir <- file.path(data_dir, "GSE110496_RAW")
 matrix_file <- file.path(data_dir, "GSE110496_series_matrix.txt")
 
