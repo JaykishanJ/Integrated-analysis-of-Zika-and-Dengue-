@@ -1,5 +1,5 @@
 <div align="center">
-<img src="figures/workflow.png" alt="Integrated Multi-Omics Pipeline" width="800" onerror="this.style.display='none'"/>
+  <img src="https://raw.githubusercontent.com/JaykishanJ/Integrated-analysis-of-Zika-and-Dengue-/main/figures/workflow.png" alt="Integrated Multi-Omics Pipeline" width="800" onerror="this.style.display='none'"/>
   
   # Integrated Multi-Omics Analysis of Zika and Dengue Infection
   
