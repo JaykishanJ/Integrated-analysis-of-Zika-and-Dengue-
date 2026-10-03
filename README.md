@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/JaykishanJ/Integrated-analysis-of-Zika-and-Dengue-/main/figures/workflow.png" alt="Integrated Multi-Omics Pipeline" width="800" onerror="this.style.display='none'"/>
+  <img src="https://raw.githubusercontent.com/JaykishanJ/Integrated-analysis-of-Zika-and-Dengue-/main/figures/workflow.png" alt="Integrated Integrated Pipeline" width="800" onerror="this.style.display='none'"/>
   
-  # Integrated Multi-Omics Analysis of Zika and Dengue Infection
+  # Integrated Integrated Analysis of Zika and Dengue Infection
   
   **A Comprehensive, Reproducible Computational Biology Pipeline**
 
@@ -20,7 +20,7 @@
 
 ## 📑 Table of Contents
 - [🎯 Research Objective](#-research-objective)
-- [🧬 Multi-Omics Strategy](#-multi-omics-strategy)
+- [🧬 Integrated Strategy](#-Integrated-strategy)
 - [📂 Repository Structure](#-repository-structure)
 - [⚙️ Reproducibility & Execution](#️-reproducibility--execution)
 - [📚 Documentation Directory](#-documentation-directory)
@@ -35,7 +35,7 @@ The primary objective of this project is to identify shared host regulatory modu
 
 ---
 
-## 🧬 Multi-Omics Strategy
+## 🧬 Integrated Strategy
 Our unified approach breaks down into four sequential stages:
 
 1. 📊 **Bulk RNA-seq Analysis**  
@@ -120,3 +120,4 @@ We have provided extensive documentation so any computational biologist can inst
 <div align="center">
   <sub>Built with ❤️ for Reproducible Bioinformatics.</sub>
 </div>
+
