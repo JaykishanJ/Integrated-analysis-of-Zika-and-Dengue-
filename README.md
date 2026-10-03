@@ -115,9 +115,15 @@ We have provided extensive documentation so any computational biologist can inst
 | 📊 [**ANALYSIS SUMMARY**](docs/ANALYSIS_SUMMARY.md) | Plain-english translation of computational evidence into biological hypotheses. |
 | ⚠️ [**LIMITATIONS**](docs/LIMITATIONS.md) | Scientific caveats, computational boundaries, and experimental caveats. |
 
+---
+
+## 🤝 Contributors
+
+<a href="https://github.com/JaykishanJ"><img src="https://github.com/JaykishanJ.png" width="60px" style="border-radius: 50%; margin-right: 10px;" alt="JaykishanJ" title="JaykishanJ"/></a>
+<a href="https://github.com/somenath-combio"><img src="https://github.com/somenath-combio.png" width="60px" style="border-radius: 50%; margin-right: 10px;" alt="somenath-combio" title="somenath-combio"/></a>
+
 <br/>
 
 <div align="center">
   <sub>Built with ❤️ for Reproducible Bioinformatics.</sub>
 </div>
-
